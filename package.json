@@ -17,7 +17,9 @@
     "less": "*"
   },
   "devDependencies": {
-    "express": "3.x"
+    "express": "3.x",
+    "mocha": "*",
+    "supertest": "*"
   },
   "engines": {
     "node": "*"
