@@ -25,6 +25,18 @@ Additionally, you can ask LESS to compress the result:
 app.use('/less-css', expressLess(__dirname + '/less', { compress: true }));
 ```
 
+For detail information on LESS errors use the `debug` option, e.g.
+
+```js
+// Enable error reporting permanently
+app.use('/less-css', expressLess(__dirname + '/less', { debug: true }));
+
+// or only for development environment
+app.use('/less-css', expressLess(__dirname + '/less', {
+    debug: app.get('env') == 'development'
+}));
+```
+
 # License
 
 Copyright (C) 2013 Andrew A. Usenok &lt;tooogle@mail.ru&gt;
