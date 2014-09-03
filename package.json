@@ -24,6 +24,9 @@
   "engines": {
     "node": "*"
   },
+  "scripts": {
+    "test": "mocha"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/toogle/express-less"
