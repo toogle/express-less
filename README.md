@@ -18,6 +18,7 @@ var app = express();
 app.use('/less-css', expressLess(__dirname + '/less'));
 ```
 Now request to */less-css/styles.css* will return rendered contents of *./less/styles.less*.
+**Note the change of file extension from `.less` to `.css`.**
 
 Additionally, you can ask LESS to compress the result:
 
