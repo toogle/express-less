@@ -38,9 +38,13 @@ app.use('/less-css', expressLess(__dirname + '/less', {
 }));
 ```
 
+## Tests
+
+    $ npm test
+
 # License
 
-Copyright (C) 2013 Andrew A. Usenok &lt;tooogle@mail.ru&gt;
+Copyright (C) 2015 Andrew A. Usenok &lt;tooogle@mail.ru&gt;
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

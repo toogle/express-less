@@ -14,15 +14,12 @@
     "css"
   ],
   "dependencies": {
-    "less": "*"
+    "less": ">=2.0.0"
   },
   "devDependencies": {
     "express": "3.x",
     "mocha": "*",
     "supertest": "*"
-  },
-  "engines": {
-    "node": "*"
   },
   "scripts": {
     "test": "mocha"
@@ -34,6 +31,6 @@
   "bugs": {
     "url": "https://github.com/toogle/express-less/issues"
   },
-  "readme": "# Express LESS\n\nOn-the-fly LESS-to-CSS conversion middleware.\n\nFor more information on LESS visit [lesscss.org](http://lesscss.org/).\n\n## Installation\n\n    $ npm install express-less\n\n## Usage\n\n```js\nvar express = require('express'),\n    expressLess = require('express-less');\n\nvar app = express();\napp.use('/less-css', expressLess(__dirname + '/less'));\n```\nNow request to */less-css/styles.css* will return rendered contents of *./less/styles.less*.\n\nAdditionally, you can ask LESS to compress the result:\n\n```js\napp.use('/less-css', expressLess(__dirname + '/less', { compress: true }));\n```\n\nFor detail information on LESS errors use the `debug` option, e.g.\n\n```js\n// Enable error reporting permanently\napp.use('/less-css', expressLess(__dirname + '/less', { debug: true }));\n\n// or only for development environment\napp.use('/less-css', expressLess(__dirname + '/less', {\n    debug: app.get('env') == 'development'\n}));\n```\n\n# License\n\nCopyright (C) 2013 Andrew A. Usenok &lt;tooogle@mail.ru&gt;\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program. If not, see <http://www.gnu.org/licenses/>.",
+  "readme": "# Express LESS\n\nOn-the-fly LESS-to-CSS conversion middleware.\n\nFor more information on LESS visit [lesscss.org](http://lesscss.org/).\n\n## Installation\n\n    $ npm install express-less\n\n## Usage\n\n```js\nvar express = require('express'),\n    expressLess = require('express-less');\n\nvar app = express();\napp.use('/less-css', expressLess(__dirname + '/less'));\n```\nNow request to */less-css/styles.css* will return rendered contents of *./less/styles.less*.\n\nAdditionally, you can ask LESS to compress the result:\n\n```js\napp.use('/less-css', expressLess(__dirname + '/less', { compress: true }));\n```\n\nFor detail information on LESS errors use the `debug` option, e.g.\n\n```js\n// Enable error reporting permanently\napp.use('/less-css', expressLess(__dirname + '/less', { debug: true }));\n\n// or only for development environment\napp.use('/less-css', expressLess(__dirname + '/less', {\n    debug: app.get('env') == 'development'\n}));\n```\n\n# License\n\nCopyright (C) 2015 Andrew A. Usenok &lt;tooogle@mail.ru&gt;\n\nThis program is free software: you can redistribute it and/or modify\nit under the terms of the GNU General Public License as published by\nthe Free Software Foundation, either version 3 of the License, or\n(at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\nGNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License\nalong with this program. If not, see <http://www.gnu.org/licenses/>.",
   "readmeFilename": "README.md"
 }
