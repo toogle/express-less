@@ -1,7 +1,7 @@
 {
   "name": "express-less",
   "description": "On-the-fly LESS-to-CSS conversion middleware",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "license": "GPLv3",
   "author": {
     "name": "Andrew A. Usenok",
