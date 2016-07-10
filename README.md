@@ -26,6 +26,12 @@ Additionally, you can ask LESS to compress the result:
 app.use('/less-css', expressLess(__dirname + '/less', { compress: true }));
 ```
 
+You can enable the cache system to improve performance:
+
+```js
+app.use('/less-css', expressLess(__dirname + '/less', { cache: true }));
+```
+
 For detail information on LESS errors use the `debug` option, e.g.
 
 ```js
@@ -44,7 +50,7 @@ app.use('/less-css', expressLess(__dirname + '/less', {
 
 # License
 
-Copyright (C) 2015 Andrew A. Usenok &lt;tooogle@mail.ru&gt;
+Copyright (C) 2016 Andrew A. Usenok &lt;tooogle@mail.ru&gt;
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
