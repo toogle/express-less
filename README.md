@@ -38,6 +38,12 @@ app.use('/less-css', expressLess(__dirname + '/less', {
 }));
 ```
 
+You can enable the cache system to improve performances:
+
+```js
+app.use('/less-css', expressLess(__dirname + '/less', { cache: true }));
+```
+
 ## Tests
 
     $ npm test
