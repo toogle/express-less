@@ -18,6 +18,24 @@ describe('Express LESS', function() {
             .expect(200, done);
     });
 
+    it('should return valid CSS from cache', function(done) {
+        var app = express();
+        app.use(expressLess(__dirname + '/fixtures', { cache: true }));
+
+        request(app)
+            .get('/valid.css')
+            .expect('Content-Type', /css/)
+            .expect(/color: #aabbcc/)
+            .expect(200)
+            .end(function(err, res) {
+                request(app)
+                    .get('/valid.css')
+                    .expect('Content-Type', /css/)
+                    .expect(/color: #aabbcc/)
+                    .expect(200, done);
+            });
+    });
+
     it('should return compressed CSS', function(done) {
         var app = express();
         app.use(expressLess(__dirname + '/fixtures', { compress: true }));
