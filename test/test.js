@@ -25,7 +25,7 @@ describe('Express LESS', function() {
         request(app)
             .get('/valid.css')
             .expect('Content-Type', /css/)
-            .expect(/color:#abc/)
+            .expect(/color:#aabbcc/)
             .expect(200, done);
     });
 
