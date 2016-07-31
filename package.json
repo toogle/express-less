@@ -1,8 +1,8 @@
 {
   "name": "express-less",
   "description": "On-the-fly LESS-to-CSS conversion middleware",
-  "version": "0.0.8",
-  "license": "GPLv3",
+  "version": "0.1.0",
+  "license": "GPL-3.0",
   "author": {
     "name": "Andrew A. Usenok",
     "email": "tooogle@mail.ru"
@@ -17,9 +17,9 @@
     "less": ">=2.0.0"
   },
   "devDependencies": {
-    "express": "3.x",
-    "mocha": "*",
-    "supertest": "*"
+    "express": ">=4.14.0",
+    "mocha": "latest",
+    "supertest": "latest"
   },
   "scripts": {
     "test": "mocha"
